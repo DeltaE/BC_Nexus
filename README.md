@@ -1,4 +1,4 @@
-# BC-CLEWS-Model
+# BC-CLEWS-Model data processing with Otoole
 
 This branch has the resources for input data and result data processing with [Otoole](https://otoole.readthedocs.io/en/latest/index.html).
 
