@@ -1,6 +1,8 @@
-/* Add borders to subplots */
+
+    /* Add borders to subplots */
 .subplot {
     width: 45%; /* Adjust width as needed */
+    height: auto;
     display: inline-block;
     margin: 2px;
     vertical-align: top;
@@ -11,6 +13,7 @@
 /* Add box shadows to subplots */
 .subplot {
     width: 45%; /* Adjust width as needed */
+    height: auto;
     display: inline-block;
     margin: 2px;
     vertical-align: top;
@@ -21,6 +24,7 @@
 /* Add grid lines to subplots */
 .subplot {
     width: 45%; /* Adjust width as needed */
+    height: auto;
     display: inline-block;
     margin: 2px;
     vertical-align: top;
@@ -36,3 +40,5 @@
     border: 1px solid #ddd; /* Add borders to table cells */
     padding: 8px; /* Add padding to table cells */
 }
+
+    
