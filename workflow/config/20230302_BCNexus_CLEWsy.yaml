@@ -67,6 +67,7 @@ LandToGridMap: {
 }
 
 # Data directory and file names for the land use data for the model.
+
 # The data for region RG1 will be in file data/clustering_results_RG1.csv
 DataDirectoryName: "./user_inputs/Sets/ClusterDataSet"
 ClusterBaseFileName: clustering_results_
@@ -101,6 +102,7 @@ LandUseCodes: {
 # Evapotranspiration values for water balances for other land uses.
 # Values given in this sample were taken from the Bolivia model by Abhishek Shivakumar.
 # Generally no need to edit these values.
+# -------->>>>>>>>>>>>>>>>>>> needs to be automated from an Open-source
 EvapotranspirationPercentPRCOtherLandUse: {  
   BAR: 0.773,
   FOR: 0.691,
@@ -113,6 +115,7 @@ EvapotranspirationPercentPRCOtherLandUse: {
 # Ratios for how much excess water goes to groudwater vs surface runoff.
 # Values given in this sample were taken from the Bolivia model by Abhishek Shivakumar.
 # Generally no need to edit these values.
+# -------->>>>>>>>>>>>>>>>>>> needs to be automated from an Open-source
 GroundwaterPercentofExcessOtherLandUse: {  
   BAR: 0.009,
   FOR: 0.077,
@@ -151,6 +154,8 @@ DomesticRenewables: ['WND', 'HYD', 'BIO', 'SOL', 'GEO']
 #   ['TECHNOLOGY', 'INPUTFUEL', 'IAR', 'OUTPUTFUEL', 'OAR', 'Name', 'ModeOfOperation']
 # One can use multiple lines for a single technology to create additional input or output activity ratios for
 # a given technology (such as the refinery example below).
+
+# -------->>>>>>>>>>>>>>>>>>> needs to be automated from an Open-source
 TransformationTechnologies: [
 # Example of 90% efficient grid distribution system:
   ['PWRTRNB01', 'ELCB01', '1.11', 'ELCB02', '1', 'Power transmission grid B', '1'],
@@ -235,6 +240,7 @@ TransformationTechnologies: [
 # Format is:
 # PLANTCODE:  ['Power plant description.', InputActivityRatio, WaterWithdrawals, WaterReturnedAsSurfaceWater]
 # PWRNGSM01: ['Description of plant (500MW).', InputActRatio, WaterWithdrawals, WaterReturn],
+# -------->>>>>>>>>>>>>>>>>>> needs to be automated from an Open-source
 PowerPlants: {
   PWRNGSB01: ['Aggregated Natural gas power stations on grid B.', 2.7, 0.0227, 0.0225],
 
@@ -289,6 +295,7 @@ Emissions: {
 }
 
 # Timeslices to define for the model.
+# -------->>>>>>>>>>>>>>>>>>> needs to be automated , sourced from a Playground Excel File ??
 Timeslices: {
   SEA1D: ['Season 1 Daytime', '#000000'],
   SEA1N: ['Season 1 Nighttime', '#cc9900'],
@@ -301,6 +308,7 @@ Timeslices: {
 }
 
 # Crop yield factors for calibrating the model.  Codes here must match crop codes in the land use data.
+# -------->>>>>>>>>>>>>>>>>>> needs to be automated
 CropYieldFactors: {
     ALF: 0.95,
     WHE: 0.95,
